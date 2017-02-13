@@ -1,3 +1,11 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'sinatra'
+require "rubygems"
+require "sqlite3"
+require "activerecord"
+require "sinatra-activerecord"
+require "sinatra-contrib"
+
+group :development do
+	gem "tux"
+end
